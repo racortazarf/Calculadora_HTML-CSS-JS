@@ -7,6 +7,7 @@
     <title>Calculadora_basica</title>
   </head>
   <body>
+    <h1 class="titulo">CALCULADORA BASICA</h1>
     <tr>
       <td colspan="4">
         <input class="text" type="text" id="text1" name="text1" value=" " />
@@ -14,6 +15,12 @@
     </tr>
     <div>
       <input type="button" value="AC" onclick="text1.value=' ' " />
+      <input
+        type="button"
+        value="÷"
+        class="buttonStyle"
+        onclick="text1.value+='/' "
+      />
     </div>
     <div>
       <button onclick="funcion7()">7</button>
@@ -43,22 +50,15 @@
       <button onclick="funcion3()">3</button>
       <input
         type="button"
-        value="÷"
-        class="buttonStyle"
-        onclick="text1.value+='/' "
-      />
-    </div>
-    <div>
-      <button onclick="funcion0()">0</button>
-      <button onclick="funcionp()">.</button>
-      <input
-        type="button"
         value="+"
         class="buttonStyle"
         onclick="text1.value+='+' "
       />
     </div>
     <div>
+      <button onclick="funcion0()">0</button>
+      <button onclick="funcionp()">.</button>
+
       <input type="button" value="=" onclick="text1.value=eval(text1.value)" />
     </div>
   </body>
