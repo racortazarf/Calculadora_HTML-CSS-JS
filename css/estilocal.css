@@ -1,0 +1,78 @@
+.titulo {
+  text-align: center;
+  font-size: xx-large;
+  font-style: oblique;
+  border: 5px solid blue;
+}
+.estructura {
+  width: 317px;
+  height: 350px;
+  margin: 0 auto;
+  margin-top: 100px;
+  -moz-box-shadow: 0 0 8px #000;
+  -webkit-box-shadow: 0 0 8px #000;
+  background-color: rgb(111, 110, 112);
+}
+#text1 {
+  float: left;
+  width: 315px;
+  height: 85px;
+  font-size: xx-large;
+  text-align: center;
+  border: none;
+  border-top: 2px solid red;
+}
+
+button {
+  box-shadow: inset -2px -6px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: Arial;
+  font-size: 19px;
+  font-weight: bold;
+  padding: 7px 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+
+.buttonStyle {
+  box-shadow: 0px 0px 0px 1px #9fb4f2;
+  background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+  background-color: #7892c2;
+  border-radius: 10px;
+  border: 1px solid #4e6096;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 16px;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #283966;
+}
+.acbutton {
+  box-shadow: inset 0px 1px 0px 0px #f5978e;
+  background: linear-gradient(to bottom, #f24537 5%, #c62d1f 100%);
+  background-color: #f24537;
+  border-radius: 6px;
+  border: 1px solid #d02718;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 6px 12px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #810e05;
+}
+.teclas div {
+  text-align: center;
+}

@@ -3,63 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilocal.css" />
     <script src="scripts/pru.js"></script>
     <title>Calculadora_basica</title>
   </head>
   <body>
-    <h1 class="titulo">CALCULADORA BASICA</h1>
-    <tr>
-      <td colspan="4">
-        <input class="text" type="text" id="text1" name="text1" value=" " />
-      </td>
-    </tr>
     <div>
-      <input type="button" value="AC" onclick="text1.value=' ' " />
-      <input
-        type="button"
-        value="÷"
-        class="buttonStyle"
-        onclick="text1.value+='/' "
-      />
+      <h1 class="titulo">CALCULADORA BASICA</h1>
     </div>
-    <div>
-      <button onclick="funcion7()">7</button>
-      <button onclick="funcion8()">8</button>
-      <button onclick="funcion9()">9</button>
-      <input
-        type="button"
-        value="x"
-        class="buttonStyle"
-        onclick="text1.value+='*' "
-      />
-    </div>
-    <div>
-      <button onclick="funcion4()">4</button>
-      <button onclick="funcion5()">5</button>
-      <button onclick="funcion6()">6</button>
-      <input
-        type="button"
-        value="-"
-        class="buttonStyle"
-        onclick="text1.value+='-' "
-      />
-    </div>
-    <div>
-      <button onclick="funcion1()">1</button>
-      <button onclick="funcion2()">2</button>
-      <button onclick="funcion3()">3</button>
-      <input
-        type="button"
-        value="+"
-        class="buttonStyle"
-        onclick="text1.value+='+' "
-      />
-    </div>
-    <div>
-      <button onclick="funcion0()">0</button>
-      <button onclick="funcionp()">.</button>
+    <div class="estructura">
+      <div class="pantalla">
+        <tr>
+          <td colspan="4">
+            <input class="text" type="text" id="text1" name="text1" value=" " />
+          </td>
+        </tr>
+      </div>
 
-      <input type="button" value="=" onclick="text1.value=eval(text1.value)" />
+      <div class="teclas">
+        <div>
+          <input
+            class="acbutton"
+            type="button"
+            value="AC"
+            onclick="text1.value=' ' "
+          />
+          <input
+            type="button"
+            value="÷"
+            class="buttonStyle"
+            onclick="text1.value+='/' "
+          />
+        </div>
+        <div>
+          <button onclick="funcion7()">7</button>
+          <button onclick="funcion8()">8</button>
+          <button onclick="funcion9()">9</button>
+          <input
+            type="button"
+            value="x"
+            class="buttonStyle"
+            onclick="text1.value+='*' "
+          />
+        </div>
+        <div>
+          <button onclick="funcion4()">4</button>
+          <button onclick="funcion5()">5</button>
+          <button onclick="funcion6()">6</button>
+          <input
+            type="button"
+            value="-"
+            class="buttonStyle"
+            onclick="text1.value+='-' "
+          />
+        </div>
+        <div>
+          <button onclick="funcion1()">1</button>
+          <button onclick="funcion2()">2</button>
+          <button onclick="funcion3()">3</button>
+          <input
+            type="button"
+            value="+"
+            class="buttonStyle"
+            onclick="text1.value+='+' "
+          />
+        </div>
+        <div>
+          <button onclick="funcion0()">0</button>
+          <button onclick="funcionp()">.</button>
+
+          <input
+            class="buttonStyle"
+            type="button"
+            value="="
+            onclick="text1.value=eval(text1.value)"
+          />
+        </div>
+      </div>
     </div>
   </body>
 </html>
